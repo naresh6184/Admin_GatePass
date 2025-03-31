@@ -1,0 +1,39 @@
+name: admin_app
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.1.2  # Updated to the latest version
+  cupertino_icons: ^1.0.5  # This may be updated to ^1.1.0 or later based on your needs
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.2.1
+  firebase_storage: ^12.3.4
+  encrypt: ^5.0.3
+  uuid: ^4.5.1
+  intl: ^0.19.0
+  flutter_barcode_scanner: ^2.0.0
+  cached_network_image: ^3.2.3
+  excel: ^2.0.0
+  path: ^1.8.0
+  open_file: ^3.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0  # Update to the latest version
+  shared_preferences: ^2.0.15  # Ensure you have the latest version
+  path_provider : ^2.1.5
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  

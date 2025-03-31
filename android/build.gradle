@@ -1,0 +1,28 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
+buildscript {
+    repositories {
+        google() // Ensure Google Maven is included
+        jcenter() // Optional, can be removed later if no longer needed
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'  // Or the latest stable version
+        classpath 'com.google.gms:google-services:4.3.10' // If you're using Firebase
+    }
+}

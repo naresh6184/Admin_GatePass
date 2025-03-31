@@ -1,0 +1,33 @@
+ # Flutter/Dart related
+**/build/
+**/.dart_tool/
+**/.idea/
+**/.vscode/
+**/android/.gradle/
+**/android/app/build/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/.symlinks/
+**/ios/Pods/
+**/ios/Runner.xcworkspace/
+**/web/.dart_tool/
+**/linux/.dart_tool/
+**/macos/.dart_tool/
+**/windows/.dart_tool/
+
+# Environment and config files
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+.packages
+*.iml
+*.log
+*.lock
+*.DS_Store
+
+# Firebase and sensitive files
+**/google-services.json
+**/firebase_options.dart
+**/ios/Runner/GoogleService-Info.plist
+**/android/app/google-services.json
