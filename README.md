@@ -59,7 +59,7 @@ The **Admin App** is a part of the Gate Pass Automation system that allows admin
 
 2.  Navigate to the project directory:
     ```sh
-    cd admin-app
+    cd Admin_gatePass
     ```
     
 
