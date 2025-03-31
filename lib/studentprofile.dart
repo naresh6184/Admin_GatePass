@@ -414,7 +414,7 @@ String userId ='userId';
 }
 
 Widget _buildStatCard(BuildContext context, String label, int value, Color color, String userId,String condition) {
-  return Container(
+  return SizedBox(
     width: double.infinity, // This will make the Card take the full width of its parent
     child: GestureDetector(
       onTap: () {

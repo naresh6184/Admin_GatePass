@@ -76,7 +76,7 @@ class _StudentPendingRequestsPageState extends State<StudentPendingRequestsPage>
 
   Future<void> fetchAdminDepartmentandDesignation() async {
 
-    adminUserId = (await FirebaseAuth.instance.currentUser?.uid)!;
+    adminUserId = (FirebaseAuth.instance.currentUser?.uid)!;
     try {
       // Fetch the admin document from Firestore
       DocumentSnapshot docSnapshot = await FirebaseFirestore.instance

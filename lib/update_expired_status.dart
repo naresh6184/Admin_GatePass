@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:intl/intl.dart';
 
 Future<void> checkAndUpdateExpiredGatePasses() async {
   final DateTime now = DateTime.now();

@@ -254,7 +254,7 @@ class _AdminHomePageState extends State<AdminHomePage> {
             icon: Icon(Icons.more_vert),
             onPressed: () async {
               // Fetch the current admin ID
-              String? adminId = await FirebaseAuth.instance.currentUser?.uid;
+              String? adminId = FirebaseAuth.instance.currentUser?.uid;
 
 
               if (adminId == null) {
@@ -291,8 +291,8 @@ class _AdminHomePageState extends State<AdminHomePage> {
                         child: Text('Add Admin'),
                       ),
                     PopupMenuItem(
-                        child: Text('Statistics'),
-                        value:'show_statistics'
+                        value:'show_statistics',
+                        child: Text('Statistics')
                     )
                   ],
                 ).then((value) {
@@ -352,7 +352,7 @@ class _AdminHomePageState extends State<AdminHomePage> {
 
   Future<void> fetchAdminDepartmentandDesignation() async {
 
-    adminUserId = (await FirebaseAuth.instance.currentUser?.uid)!;
+    adminUserId = (FirebaseAuth.instance.currentUser?.uid)!;
     try {
       // Fetch the admin document from Firestore
       DocumentSnapshot docSnapshot = await FirebaseFirestore.instance

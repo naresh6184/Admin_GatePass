@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class StudentDatabasePage extends StatefulWidget {
+  const StudentDatabasePage({super.key});
+
   @override
   _StudentDatabasePageState createState() => _StudentDatabasePageState();
 }
@@ -342,7 +344,7 @@ class _StudentDatabasePageState extends State<StudentDatabasePage> {
           borderRadius: BorderRadius.circular(8),
         ),
         elevation: 4, // Optional: Adds a shadow for better visibility
-        child: Container(
+        child: SizedBox(
           width: double.infinity, // Ensures the card takes full width
           height: 60, // Set a fixed height for consistency
           child: Center(
